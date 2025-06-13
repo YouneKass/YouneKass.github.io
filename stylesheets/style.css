@@ -1,0 +1,122 @@
+/* Estilo para la pagina completa */
+body{
+    font-family: sans-serif;
+    background-color: #1c1c1e;
+    color: white;
+    line-height: 1.6;
+    padding: 1.3rem;
+}
+
+/* Estilo para la barra de navegacion */
+.navbar{
+    background-color: #1a202c;
+    align-items: center;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo para ajustar los botones de seccion */
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    
+}
+
+/* Estilo para los botones dentro de la barra de navegacion */
+.nav-links a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #a0aec0;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Tamaño para mi logo */
+.logo img{
+    width: 4rem;
+}
+/* Orden para la parte de mi foto con mi nombre */
+.divPresentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Estilo para mi nombre */
+.divPresentacion h1{
+    font-size: 2rem;
+}
+
+/* Estilo profesion*/
+.divPresentacion p{
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Estilo para mi presentacion */
+.presentacion{
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+/* Estilo para mi foto de perfil */
+.presentacion-img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+/* Estilo del resumen */
+.resumen{
+    max-width: 80rem;
+    margin: 0 auto 4rem auto;
+    text-align: left;
+}
+
+/* Ocultar menú hamburguesa en pantallas grandes */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .nav-links {
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color:  #1a202c;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+}

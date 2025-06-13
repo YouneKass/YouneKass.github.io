@@ -5,20 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felipe Lleuful</title>
     <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
 </head>
+
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="img/logoFelipe.jpg" alt="Felipe Lleuful" /></a>
+            </div>
+            <!-- Botón hamburguesa -->
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+
+            <!-- Enlaces de navegación -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#sectionProyectos">Proyectos</a></li>
+                <li><a href="#sectionHabilidades">Habilidades</a></li>
+                <li><a href="#sectionContacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Presentación -->
+    <section class="presentacion" id="secionPresentacion">
+        <div class="divPresentacion">
+            <div>
+                <h1>Felipe Lleuful</h1>
+                <p>Analista Programador</p>
+            </div>
+            <img src="img/felipe.jpg" alt="Foto Perfil" class="presentacion-img">
+        </div>
+        
+        <div class="resumen">
+            <p>
+                Hola mi nombre es Felipe Lleuful Aravena y soy una persona seria,responsable y con muchasganas de trabajar y aprender.
+                Me considero cooperativo,comunicativo, organizado,proactivo y con una grandisposición para el trabajo en equipo.
+                apasionado por crear servicios y productos digitales. Actualmente me dedico en seguir mejorando mis capacidades en la programación 
+                con cursos y capacitaciones.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Seccion Proyectos -->
     <section id="sectionProyectos">
         <h1>Proyectos</h1>
         <p>Mis Proyectos realizados:</p>
     </section>
     <br>
+    <!-- Seccion Habilidades -->
     <section id="sectionHabilidades">
         <h1>Habilidades</h1>
         <p>...</p>
     </section>
+    <!-- Seccion Contacto -->
     <section id="sectionContacto">
         <h1>Contato:</h1>
         <p>felipe.lleuful@hotmail.com</p>
     </section>
 </body>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </html>
