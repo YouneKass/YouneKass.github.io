@@ -120,3 +120,61 @@ body{
     position: relative;
   }
 }
+
+/* Estilo para la section conocimientos */
+.conocimientos {
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 80rem;
+  margin: auto;
+}
+
+/* Estilo para el titulo h2 de conocimiento */
+.conocimientos h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #444;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo para la breve descripcion de conocimiento */
+.conocimientos p{
+  text-align: left;
+}
+
+/* Estilo para agrupar los iconos */
+.iconos-conocimientos {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+/* estilo a cada imagen dentro del contenedor */
+.icono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5%;
+  transition: transform 0.3s ease;
+}
+
+/* estilo para los nombres de cada imagen dentro de conocimientos */
+.icono p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white; 
+}
+
+/* aplico zoom en los iconos */
+.icono img:hover {
+  transform: scale(1.1);
+}
+
+.contenido-conocimiento {
+  display: none; 
+}
