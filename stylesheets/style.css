@@ -1,23 +1,24 @@
 /* Estilo para la pagina completa */
 body{
     font-family: sans-serif;
-    background-color: #1c1c1e;
     color: white;
     line-height: 1.6;
     padding: 1.3rem;
+    background-image: url('/img/FondoPantalla.jpg');
+    background-size: cover; 
 }
 
 /* Estilo para la barra de navegacion */
 .navbar{
-    background-color: #1a202c;
-    align-items: center;
     padding: 1rem 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* Estilo para ajustar los botones de seccion */
 .nav-links{
+    align-items: center;
     display: flex;
     justify-content: flex-end;
     gap: 1.5rem;
@@ -38,7 +39,7 @@ body{
 
 /* Tamaño para mi logo */
 .logo img{
-    width: 4rem;
+    width: 25%;
 }
 /* Orden para la parte de mi foto con mi nombre */
 .divPresentacion{
@@ -63,7 +64,7 @@ body{
 /* Estilo para mi presentacion */
 .presentacion{
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 5rem;
 }
 
 /* Estilo para mi foto de perfil */
@@ -78,7 +79,8 @@ body{
 .resumen{
     max-width: 80rem;
     margin: 0 auto 4rem auto;
-    text-align: left;
+    text-align: center;
+    
 }
 
 /* Ocultar menú hamburguesa en pantallas grandes */
@@ -97,9 +99,9 @@ body{
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 4rem;
+    top: 6rem;
     right: 1rem;
-    background-color:  #1a202c;
+    background-image: url('/img/arnaud-girault-IjEtFjxXweE-unsplash.jpg');
     border-radius: 1rem;
     padding: 1rem 1rem;
     z-index: 1000;
@@ -120,6 +122,8 @@ body{
     position: relative;
   }
 }
+
+
 
 /* Estilo para la section conocimientos */
 .conocimientos {
@@ -147,10 +151,13 @@ body{
 
 /* Estilo para agrupar los iconos */
 .iconos-conocimientos {
-  margin-top: 4rem;
+ 
   display: flex;
+  justify-content: space-around;
+  gap: 2rem;
   flex-wrap: wrap;
-  gap: 3rem;
+  margin-top: 2rem;
+  
 }
 
 /* estilo a cada imagen dentro del contenedor */
@@ -158,8 +165,9 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 5%;
+  width: 100%;
   transition: transform 0.3s ease;
+  margin-top: 3rem;
 }
 
 /* estilo para los nombres de cada imagen dentro de conocimientos */
@@ -175,6 +183,48 @@ body{
   transform: scale(1.1);
 }
 
-.contenido-conocimiento {
-  display: none; 
+.proyectos{
+  text-align: center;
 }
+
+.contacto{
+  text-align: center;
+}
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  
+}
+
+/* Base de la barra */
+.barra-nivel {
+  width: 100px;
+  height: 30px;
+  border-radius: 999px;
+  background: #1a1a1a;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Parte iluminada que cambia según el nivel */
+.barra-nivel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #dce3ff;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+/* Niveles visuales */
+.nivel-1::before { width: 20%; }
+.nivel-2::before { width: 40%; }
+.nivel-3::before { width: 60%; }
+.nivel-4::before { width: 80%; }
+.nivel-5::before { width: 100%; }
