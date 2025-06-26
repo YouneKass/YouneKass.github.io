@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Lleuful</title>
+    <title>Portafolio / Felipe Lleuful</title>
     <link rel="stylesheet" href="stylesheets/reset.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <script type="module" src="main.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#"><img src="img/logoFelipe.jpg" alt="Felipe Lleuful" /></a>
+                <a href="#"><img src="img/Felipe lleuful.png" alt="Felipe Lleuful" /></a>
             </div>
             <!-- Botón hamburguesa -->
             <button class="menu-toggle" id="menu-toggle">☰</button>
@@ -20,7 +21,7 @@
             <!-- Enlaces de navegación -->
             <ul class="nav-links" id="nav-links">
                 <li><a href="#sectionProyectos">Proyectos</a></li>
-                <li><a href="#sectionHabilidades">Habilidades</a></li>
+                <li><a href="#sectionConocimientos">Conocimientos</a></li>
                 <li><a href="#sectionContacto">Contacto</a></li>
             </ul>
         </nav>
@@ -46,66 +47,42 @@
         </div>
     </section>
 
-    <!-- Section Conocimientos -->
-    <section class="conocimientos">
-        <h2 id="titulo-conocimientos">Conocimientos</h2>
-        <div id="contenido-conocimiento">
-            <p>Estos son algunos lenguajes y tecnologías que he aprendido:</p>
-         
-            <div class="iconos-conocimientos">
-                <div class="icono">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
-                    <p>HTML5</p>
-                </div>
-                <div class="icono">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
-                    <p>CSS</p>
-                </div>
-                <div class="icono">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
-                    <p>JavaScript</p>
-                </div>
-                <div class="icono">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git">
-                    <p>Git</p>
-                </div>
-                <div class="icono">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub">
-                    <p>Github</p>
-                </div>
-                <div class="icono">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js">
-                    <p>Node.js</p>
-                </div>
-                <div class="icono">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React">
-                    <p>React</p>
-                </div>
-                <div class="icono">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Vs-Code" title="VsCode">
-                    <p>VS Code</p>
-                </div>
-            </div>   
-        </div>  
-    </section>
- 
- 
     <!-- Seccion Proyectos -->
-    <section id="sectionProyectos">
+    <section id="sectionProyectos" class="proyectos">
         <h1>Proyectos</h1>
         <p>Mis Proyectos realizados:</p>
     </section>
     <br>
-    <!-- Seccion Habilidades  -->
-    <section id="sectionHabilidades">
-        <h1>Habilidades</h1>
-        <p>...</p>
-    </section>
+
+    <!-- Section Conocimientos -->
+    <section id="sectionConocimientos" class="conocimientos">
+        <h2 id="titulo-conocimientos">Conocimientos</h2>
+        <div id="contenido-conocimiento">
+            <p>Estos son algunos lenguajes y tecnologías que he aprendido:</p>
+            
+            <div class="iconos-conocimientos">
+                <div id="frontend" class="skills">
+                    <h3>Frontend</h3>
+                    
+                </div>
+                <div id="backend" class="skills">
+                    <h3>Backend</h3>
+                    
+                </div>
+                <div id="other" class="skills">
+                    <h3>Otros</h3>
+                    
+                </div>
+            </div>   
+        </div>  
+    </section>   
+    <br>
      <!-- Seccion Contacto  -->
-    <section id="sectionContacto">
+    <section id="sectionContacto" class="contacto">
         <h1>Contato:</h1>
         <p>felipe.lleuful@hotmail.com</p>
     </section>
 </body>
-    <script src="main.js"></script>
+    
+    <!-- <script type="module" src="skills.js"></script> -->
 </html>
