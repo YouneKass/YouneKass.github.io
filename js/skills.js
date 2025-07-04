@@ -1,4 +1,9 @@
 export const frontendSkills = [
+    {
+        nombre: "Imagen inválida",
+        imagen: "https://imagen-falsa.com/imagen.png", // imagen corrupta
+        nivel: 2
+    },
     {   
         nombre: "HTML5", 
         imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
