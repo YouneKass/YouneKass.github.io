@@ -80,7 +80,6 @@ body{
     max-width: 80rem;
     margin: 0 auto 4rem auto;
     text-align: center;
-    
 }
 
 /* Ocultar menú hamburguesa en pantallas grandes */
@@ -157,7 +156,6 @@ body{
   gap: 2rem;
   flex-wrap: wrap;
   margin-top: 2rem;
-  
 }
 
 /* estilo a cada imagen dentro del contenedor */
