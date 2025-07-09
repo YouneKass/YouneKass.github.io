@@ -15,41 +15,37 @@ function cargarImagenConPromesa(skill) {
 
 //  Crear div skill esperando la imagen con await
 async function crearSkillElemento(skill) {
-  const div = document.createElement("div");
-  div.classList.add("icono");
-
-  let img;
   try {
-    img = await cargarImagenConPromesa(skill);
+    const img = await cargarImagenConPromesa(skill);
+
+    const div = document.createElement("div");
+    div.classList.add("icono");
+
+    const nombre = document.createElement("span");
+    nombre.classList.add("nombre-skill");
+    nombre.textContent = skill.nombre;
+
+    const barra = document.createElement("div");
+    barra.classList.add("barra-nivel", `nivel-${skill.nivel}`);
+
+    div.appendChild(img);
+    div.appendChild(nombre);
+    div.appendChild(barra);
+
+    return div; // Solo si todo fue bien
   } catch (error) {
-    console.error(error.message);
-
-    // Imagen alternativa por error
-    img = document.createElement("div");
-    img.textContent = "Img no cargada";
-    img.classList.add("img-error");
+    console.error(`Error al mostrar "${skill.nombre}": ${error.message}`);
+    return null; // 👉 no se retorna nada visual
   }
-
-  const nombre = document.createElement("span");
-  nombre.classList.add("nombre-skill");
-  nombre.textContent = skill.nombre;
-
-  const barra = document.createElement("div");
-  barra.classList.add("barra-nivel", `nivel-${skill.nivel}`);
-
-  div.appendChild(img);
-  div.appendChild(nombre);
-  div.appendChild(barra);
-
-  return div;
 }
 
 // Función para renderizar skills de forma asíncrona
 async function renderSkills(skills, contenedorId) {
   const contenedor = document.getElementById(contenedorId);
+
   for (const skill of skills) {
     const elemento = await crearSkillElemento(skill);
-    contenedor.appendChild(elemento);
+    if (elemento) contenedor.appendChild(elemento); // Solo si se creó
   }
 }
 
