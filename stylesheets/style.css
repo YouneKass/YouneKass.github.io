@@ -395,7 +395,50 @@ text-align: center;
   .proyectosImg{
     flex-direction: column;
     align-items: center;
+    
   }
+  .tarjeta{
+    background:#301d1d;
+    border-radius: 3rem;
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .conocimientos {
+  background-color: #200202;
+  /* padding: 10rem; */
+  margin: none;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Estilo para el titulo h2 de conocimiento */
+.conocimientos h2 {
+  justify-content: center;
+}
+
+.conocimientos p{
+  text-align: center;
+}
+.conocimientos h3 {
+  font-size: 2rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+/* aplico zoom en los iconos */
+.icono img:hover {
+  transform: scale(1.1);
+} 
+
+
+.skills{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 
   .links-contactos{
     background: #200202;
