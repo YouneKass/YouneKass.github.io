@@ -243,7 +243,7 @@ footer h1{
 
 .copyright{
   margin: 0.8rem;
-text-align: center;
+  text-align: center;
 }
 
 
@@ -302,69 +302,6 @@ text-align: center;
     background: #200202;
   }
 
-
-  /* Estilo para los botones dentro de la barra de navegacion */
-  .nav-links a {
-    position: relative;
-    display: inline-block;
-    padding: 0rem 0.5rem;
-    color: #fff;
-    border: 0.2rem solid rgb(90, 9, 9);
-    border-radius: 0.5rem;
-    transition: color 0.3s ease;
-  }
-  /* animacion detras de los botones */
-  .nav-links a::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background: rgb(90, 9, 9);
-    z-index: -1;
-    transition: width 0.3s ease;
-  }
-
-  .nav-links a:hover::before {
-    width: 100%;
-  }
-
-  .nav-links a:hover {
-    box-shadow: 0 0 20px white;
-    color: #5a4949;
-  }
-
-  .nav-links span:nth-child(n){
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border: 2px solid;
-    transition: all 0.6s ease;
-  }
-
-  .nav-links span:nth-child(1){
-    right: 10%;
-    top: -15%;
-    background-color: #fff;
-  }
-  .nav-links span:nth-child(2){
-    left: 10%;
-    bottom: -6px;
-  }
-
-  .nav-links:hover span:nth-child(1){
-    right: 80%;
-    transform: rotate(90deg);
-    background-color: #5a4949;
-    color: #5a4949;;
-  }
-
-  .nav-links:hover span:nth-child(2){
-    left: 80%;
-    transform: rotate(90deg);
-    color: #5a4949;;
-  }
   .nav-links.active {
     display: flex;
   }
@@ -377,87 +314,39 @@ text-align: center;
   }
 
   .presentacion{
-       padding-top: 5rem;
+    padding-top: 5rem;
   }
   .conocimientos{
      flex-direction: column;
      align-items: center;
   }
 
-  .divPresentacion{
-     margin: auto;
-      margin-top: 1rem;
-      align-self: center;
-      border-radius:50%;
-      width:60%;
-  }
-
   .proyectosImg{
     flex-direction: column;
-    align-items: center;
-    
   }
+
   .tarjeta{
-    background:#301d1d;
-    border-radius: 3rem;
-    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
     width: 100%;
-    padding: 1.5rem;
-    text-align: center;
   }
 
   .conocimientos {
-  background-color: #200202;
   padding: 1.2rem;
-  text-align: center;
-  margin-top: 2rem;
-}
+  }
 
-/* Estilo para el titulo h2 de conocimiento */
-.conocimientos h2 {
-  justify-content: center;
-}
-
-.conocimientos p{
-  text-align: center;
-}
-.conocimientos h3 {
-  font-size: 2rem;
-  margin-top: 4rem;
-  text-align: center;
-}
-/* aplico zoom en los iconos */
-.icono img:hover {
-  transform: scale(1.1);
-} 
-
-
-.skills{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-  .links-contactos{
-    background: #200202;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+  .conocimientos p{
     text-align: center;
-    align-items: center;
+  }
+
+  .conocimientos h3 {
+    text-align: center;
+  }
+ 
+  .skills{
     flex-direction: column;
   }
 
-  footer h1{
-    margin-top: 2rem;
-    background: #200202;
-    display: flex;
-    justify-content: center;
+  .links-contactos{
+    flex-direction: column;
   }
 
-  .copyright{
-    margin: 0.8rem;
-  text-align: center;
-  }
 }

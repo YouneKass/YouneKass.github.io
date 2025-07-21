@@ -23,11 +23,6 @@ export const frontendSkills = [
         nombre: "Angular", 
         imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-plain.svg",
         nivel: 1 
-    },
-    { 
-        nombre: "PHP", 
-        imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
-        nivel: 4 
     }
 ];
 
@@ -50,6 +45,11 @@ export const backendSkills = [
     { 
         nombre: "Postman", 
         imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+        nivel: 3 
+    },
+    { 
+        nombre: "PHP", 
+        imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
         nivel: 3 
     }
 ];
