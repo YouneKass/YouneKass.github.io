@@ -4,6 +4,10 @@ html{
   box-sizing: border-box;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body{
     font-family: sans-serif;
     color: white;
@@ -11,7 +15,8 @@ body{
     padding: 1.3rem;
     background-image: url('/img/FondoPantalla.jpg');
     background-size: cover; 
-    margin-top: 6rem;
+    margin-top: 1rem;
+    overflow-x: hidden;
 }
 
 /* Estilo para la barra de navegacion */
@@ -168,6 +173,8 @@ body{
     display: flex;
     justify-content: center;
     gap: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .proyectosImg img{
@@ -181,7 +188,8 @@ body{
   background:#301d1d;
   border-radius: 3rem;
   box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
-  width: 50%;
+  width: 100%;
+  max-width: 500px;
   padding: 1.5rem;
   text-align: center;
 }
@@ -313,12 +321,14 @@ footer h1{
     color: white;
   }
 
-  .presentacion{
-    padding-top: 5rem;
-  }
   .conocimientos{
      flex-direction: column;
      align-items: center;
+     padding: 1.2rem;
+  }
+  
+  .proyectos h2{
+    font-size: 2rem;
   }
 
   .proyectosImg{
@@ -329,23 +339,19 @@ footer h1{
     width: 100%;
   }
 
-  .conocimientos {
-  padding: 1.2rem;
+  .conocimientos h2 {
+    font-size: 2rem;
   }
-
-  .conocimientos p{
-    text-align: center;
-  }
-
-  .conocimientos h3 {
-    text-align: center;
-  }
- 
+  
   .skills{
     flex-direction: column;
   }
 
   .links-contactos{
+    flex-direction: column;
+  }
+
+  .divPresentacion{
     flex-direction: column;
   }
 
