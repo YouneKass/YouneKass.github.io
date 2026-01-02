@@ -2,12 +2,12 @@ export const frontendSkills = [
     {   
         nombre: "HTML5", 
         imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-        nivel: 5 
+        nivel: 4.5 
     },
     {   
         nombre: "CSS3",
         imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-        nivel: 4 
+        nivel: 3.5 
     },
     { 
         nombre: "JavaScript", 
@@ -17,12 +17,12 @@ export const frontendSkills = [
     { 
         nombre: "React", 
         imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        nivel: 3 
+        nivel: 2.5 
     },
     { 
         nombre: "Angular", 
         imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-plain.svg",
-        nivel: 1 
+        nivel: 2 
     }
 ];
 
@@ -35,7 +35,7 @@ export const backendSkills = [
     { 
         nombre: "Express.js", 
         imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-        nivel: 1 
+        nivel: 2.5 
     },
     { 
         nombre: "MySQL", 
@@ -50,7 +50,7 @@ export const backendSkills = [
     { 
         nombre: "PHP", 
         imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
-        nivel: 3 
+        nivel: 3.5 
     }
 ];
 
@@ -58,7 +58,7 @@ export const otherSkills = [
     { 
         nombre: "Git", 
         imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-        nivel: 3 
+        nivel: 3.7 
     },
     { 
         nombre: "Github", 
@@ -73,6 +73,6 @@ export const otherSkills = [
     { 
         nombre: "Notion", 
         imagen: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg",
-        nivel: 4 
+        nivel: 4.6 
     }
 ];

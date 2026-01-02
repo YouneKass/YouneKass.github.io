@@ -23,12 +23,15 @@ function crearSkillElemento(skill) {
   nombre.classList.add("nombre-skill");
   nombre.textContent = skill.nombre;
 
-  const barra = document.createElement("div");
-  barra.classList.add("barra-nivel", `nivel-${skill.nivel}`);
+  const estrellas = document.createElement("div");
+  estrellas.classList.add("rating");
+  
+  const porcentaje = (skill.nivel / 5) * 100;
+  estrellas.style.setProperty("--percent", `${porcentaje}%`);
 
   div.appendChild(img);
   div.appendChild(nombre);
-  div.appendChild(barra);
+  div.appendChild(estrellas);
 
   return div;
 }
@@ -41,7 +44,6 @@ function renderSkills(skills, contenedorId) {
   });
 }
 
-// Renderizar todos
 renderSkills(frontendSkills, "frontend");
 renderSkills(backendSkills, "backend");
 renderSkills(otherSkills, "other");
