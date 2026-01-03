@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio / Felipe Lleuful</title>
+    <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script type="module" src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/Felipe lleuful.png" alt="Felipe Lleuful" />
+            </div>
+            <!-- Botón hamburguesa -->
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+
+            <!-- Enlaces de navegación -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#sectionProyectos">Proyectos<span></span><span></span></a></li>
+                <li><a href="#sectionConocimientos">Conocimientos<span></span><span></span></a></li>
+                <li><a href="#sectionDiplomados">Diplomados<span></span><span></span></a></li>
+                <li><a href="#sectionContacto">Contacto<span></span><span></span></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Presentación -->
+    <section class="presentacion" id="secionPresentacion">
+        <div class="divPresentacion">
+            <div>
+                <h1>Felipe Lleuful A.</h1>
+                <p>Analista Programador</p>
+            </div>
+            <img src="img/felipe.jpg" alt="Foto Perfil" class="presentacion-img">
+        </div>
+        
+        <div class="resumen">
+            <p>
+                Hola mi nombre es Felipe Lleuful Aravena y soy una persona seria, responsable y con muchas ganas de trabajar y aprender.
+                Me considero cooperativo, comunicativo, organizado, proactivo y con una grandisposición para el trabajo en equipo.
+                Apasionado por crear servicios y productos digitales. Actualmente me dedico en seguir mejorando mis capacidades en la programación 
+                con cursos y capacitaciones.
+            </p>
+        </div>
+    </section>
+
+    <!-- Seccion Proyectos -->
+    <section id="sectionProyectos" class="proyectos">
+        <h2>Proyectos</h2>
+        <p>Mis Proyectos realizados:</p>
+        <div class="proyectosImg">
+            <div class="tarjeta">
+                <h3>AHORCADO</h3>
+                <img src="img/ahorcado-ezgif.com-cut.gif" alt="Juego Ahorcado">
+                <p>Juego del ahorcado hecho con HTML, CSS y JS.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Piedra, Papel y Tijera</h3>
+                <img src="img/piedraPapelTijera-ezgif.com-crop.gif" alt="Juego piedra, papel y tijera">
+                <p>Juego de piedra, papel y tijera con JS.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Mokepón</h3>
+                <img src="img/makepon-ezgif.com-crop.gif" alt="Juego Makepon">
+                <p>Juego de batallas estilo Pokémon. HTML, CSS y JS.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Conocimientos -->
+    <section id="sectionConocimientos" class="conocimientos"> 
+        <details>
+            <summary>            
+                <h2 id="titulo-conocimientos">Conocimientos</h2>
+            </summary>
+                <p>Estos son algunos lenguajes y tecnologías que he aprendido:</p>     
+                    <div>
+                        <h3>Frontend</h3> 
+                        <div id="frontend" class="skills">   
+                        </div>
+                        <h3>Backend</h3> 
+                        <div id="backend" class="skills">
+                        </div>
+                        <h3>Otros</h3>  
+                        <div id="other" class="skills"> 
+                        </div>
+                    </div>  
+            </details>
+    </section>   
+    <section id="sectionDiplomados" class="diplomados"> 
+            <details> 
+                <summary>           
+                    <h2 id="titulo-diplomado">Diplomados & Certificaciones</h2>
+                </summary>
+                    <p>Estos son los diplomados que he conseguido como programador:</p> 
+                    <div class="grid-diplomas" id="listaDiplomas">
+                    </div>
+            </details>   
+    </section>  
+
+    <footer id="sectionContacto"> 
+        <h1>Contactos:</h1>
+        <div class="links-contactos">          
+            <div class="links-contactos">
+                <i><img src="img/icons8-github-50.png" alt="GitHub"></i>
+                <a href="https://github.com/YouneKass" target="_blank">GitHub</a>
+            </div>
+            <div class="links-contactos">
+                <i><img src="img/icons8-whatsapp-48.png" alt="whatsapp"></i>
+                <a href="https://wa.me/56990465814" target="_blank">+56 96 609 9634</a>
+            </div>
+            <div class="links-contactos">
+                <i><img src="img/icons8-linkedin-48.png" alt="linkedin"></i>
+                <a href="https://www.linkedin.com/in/felipelleuful/" target="_blank">linkedin</a>
+            </div>
+            <div class="links-contactos">
+                <i><img src="img/icons8-correo-48.png" alt="correo"></i>
+                <a href="mailto:felipe.lleuful@hotmail.com" target="_blank">felipe.lleuful@hotmail.com</a>
+            </div>
+            <div >
+                <a href="img/Cv_vitae.pdf" target="_blank" class="btn-cv">📄Ver CV</a>
+                <a href="img/Cv_vitae.pdf" download class="btn-cv">📄Descargar CV</a>
+            </div>
+        </div>        
+        <h3 class="copyright">© 2025 Felipe S. Lleuful A. - Portafiolio Profesional</h3>
+    </footer>
+    
+</body>
+</html>
