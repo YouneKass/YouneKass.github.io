@@ -101,7 +101,7 @@ diplomas.forEach(archivo => {
   div.onclick = () => abrirDiploma("img/" + archivo);
 
   div.innerHTML = `
-    <embed src="img/${archivo}#toolbar=0&navpanes=0&scrollbar=0"
+    <embed src="img/${archivo}#view=FitH&toolbar=0&navpanes=0&scrollbar=0"
           type="application/pdf"
           class="diploma-preview">
 
