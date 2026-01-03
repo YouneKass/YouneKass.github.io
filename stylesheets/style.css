@@ -237,13 +237,13 @@ body{
 
 .grid-diplomas {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 14px;
   margin-top: 10px;
 }
 
 .diploma-item {
-  background: #111;
+  background: #061E29;
   padding: 10px;
   border-radius: 14px;
   box-shadow: 0 8px 18px rgba(0,0,0,.25);
@@ -273,34 +273,6 @@ body{
   display: block;
   margin-top: 6px;
   color: #ddd;
-}
-
-/* Modal */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.85);
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  z-index: 1000;
-}
-
-.modal embed {
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-  background: #111;
-}
-
-.cerrar {
-  position: fixed;
-  top: 20px;
-  right: 28px;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
 }
 
 .links-contactos{
@@ -402,7 +374,7 @@ footer h1{
     padding: 1rem 1rem;
     z-index: 1000;
     cursor: pointer; 
-    background: #200202;
+    background: #96A78D;
   }
 
   .nav-links.active {
@@ -440,6 +412,16 @@ footer h1{
   
   .skills{
     flex-direction: column;
+  }
+
+  .diplomados{
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+  }
+
+  .diplomados h2 {
+    font-size: 2rem;
   }
 
   .links-contactos{
