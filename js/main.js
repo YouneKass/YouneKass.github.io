@@ -148,7 +148,7 @@ renderSkills(backendSkills, "backend");
 renderSkills(otherSkills, "other");
 
 const diplomas = [
-  "diploma-php.pdf",
+  "diploma-python.pdf",
   "diploma-angular-componentes.pdf",
   "diploma-backend-nodejs.pdf",
   "diploma-beginner-core.pdf",
@@ -183,10 +183,10 @@ const diplomas = [
 
 function formatearNombre(nombre) {
   return nombre
-    .replace("diploma-", "")      // quita prefijo
-    .replace(".pdf", "")          // quita extensión
-    .replace(/-/g, " ")           // guiones → espacios
-    .replace(/\b\w/g, l => l.toUpperCase()); // capitaliza
+    .replace("diploma-", "") 
+    .replace(".pdf", "")       
+    .replace(/-/g, " ")  
+    .replace(/\b\w/g, l => l.toUpperCase()); 
 }
 
 const contenedor = document.getElementById("listaDiplomas");
