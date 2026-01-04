@@ -57,40 +57,50 @@
                 <h3>Mokepón</h3>
                 <img src="imagenes/Mokepon.png" alt="Juego Makepon">
                 <p>Juego de batallas estilo Pokémon. HTML, CSS y JS.</p>
-                <input type="button" value="Informacion">
+                <input type="button" value="Ver más" class="btn-modal" data-id="Informacion0">
             </div>
             <div class="tarjeta">
                 <h3>InfoJobs</h3>
                 <img src="imagenes/jscamp.jpg" alt="pagina para encontrar tu trabajo.">
                 <p>Bootcamp intensivo de JavaScript y desarrollo web full-stack</p>
-                <input type="button" value="Informacion">
+                <input type="button" value="Ver más" class="btn-modal" data-id="Informacion1">
             </div>
             <div class="tarjeta">
                 <h3>Api Marvel</h3>
                 <img src="imagenes/ApiMarvel.png" alt="Api Marvel">
                 <p>Creacion api con Marvel</p>
-                <input type="button" value="Informacion">
+                <input type="button" value="Ver más" class="btn-modal" data-id="Informacion2">
             </div>
             <div class="tarjeta">
-                <h3>AHORCADO</h3>
+                <h3>Ahorcado</h3>
                 <img src="imagenes/ahorcado.png" alt="Juego Ahorcado">
                 <p>Juego del ahorcado hecho con HTML, CSS y JS.</p>
-                <input type="button" value="Informacion">
+                <input type="button" value="Ver más" class="btn-modal" data-id="Informacion3">
             </div>
             <div class="tarjeta">
                 <h3>ConecMayor+</h3>
                 <img src="imagenes/abuelo.png" alt="Pagina para el desarrollo social y la inclusión de la comunidad.">
                 <p>ConecMayor+ esta diseñado para el desarrollo social y la inclusión de la comunidad</p>
-                <input type="button" value="Informacion">
+                <input type="button" value="Ver más" class="btn-modal" data-id="Informacion4">
             </div>
             <div class="tarjeta">
                 <h3>Piedra, Papel y Tijera</h3>
                 <img src="imagenes/piedra-papel-tijera.png" alt="Juego piedra, papel y tijera">
                 <p>Juego de piedra, papel y tijera con JS.</p>
-                <input type="button" value="Informacion">
+                <input type="button" value="Ver más" class="btn-modal" data-id="Informacion5">
             </div>
         </div>
     </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2 id="modalTitulo"></h2>
+            <img id="modalImagen" style="width:100%; border-radius:1rem; display:none;">
+            <p id="modalTexto"></p>
+            <input type="button" value="Directorio" class="btn-modal" id="modalBotonLink">
+        </div>
+    </div>
 
     <!-- Section Conocimientos -->
     <section id="sectionConocimientos" class="conocimientos"> 

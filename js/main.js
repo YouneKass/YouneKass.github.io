@@ -8,7 +8,106 @@ menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
+const infoTarjetas = {
+  Informacion0: {
+    titulo: "Mokepon",
+    descripcion: `Juego de batalla de monstruos elementales desarrollado para practicar lógica de programación avanzada
+                Incluye un sistema de selección dinámica de personajes, gestión de estados (vidas y ataques) mediante manipulación del DOM 
+                y una lógica de combate basada en ventajas de tipos.`,
+    imagen: "imagenes/mokepon2.png",
+    link: "https://github.com/YouneKass/mokepon"
+  },
 
+  Informacion1: {
+    titulo: "InfoJobs",
+    descripcion: `bootcamp intensivo de JavaScript y desarrollo web full-stack diseñado para llevarte desde los fundamentos hasta las tecnologías 
+                más avanzadas del ecosistema JavaScript. Veremos HTML, CSS, JavaScript, TypeScript, Node.js, SQL, CI/CD y Docker.`,
+    imagen: "imagenes/infojobs.png",
+    link: "https://github.com/YouneKass/InfoJobs"
+  },
+
+  Informacion2: {
+    titulo: "Api Marvel",
+    descripcion: `Aplicación web integrada con la API oficial de Marvel Comics para la visualización de héroes, cómics y eventos. 
+                Implementé el consumo de datos mediante Fetch API con manejo de asincronismo (Async/Await), gestión de claves criptográficas (Hash MD5) 
+                para la autenticación y renderizado dinámico de tarjetas optimizado para el rendimiento. (Hay que pagar MEMBRESIA para poder visualizar)`,
+    imagen: "imagenes/Apimarvel1.png",
+    link: "https://github.com/YouneKass/ApiMarvel"
+  },
+
+  Informacion3: {
+    titulo: "Ahorcado",
+    descripcion: `Juego interactivo donde el usuario debe adivinar una palabra oculta antes de agotar sus intentos. 
+                Incluye una base de datos de palabras aleatorias, control de teclas presionadas para evitar repeticiones y 
+                efectos visual (victoria o derrota).`,
+    imagen: "imagenes/ahorcado2.png",
+    link: "https://github.com/YouneKass/Ahorcado"
+  }
+  ,
+
+  Informacion4: {
+    titulo: "ConecMayor+",
+    descripcion: `ConecMayor+ esta diseñado para el desarrollo social y la inclusión de la comunidad. 
+                Poder ayudar a las personas que lo necesiten, poder ocupar las redes sociales de una manera sencilla.`,
+    imagen: "imagenes/conecMayor.png",
+    link: "https://github.com/YouneKass/ConecMayor"
+  }
+  ,
+
+  Informacion5: {
+    titulo: "Piedra, Papel y Tijera",
+    descripcion: "Mini-juego desarrollado con JavaScript enfocado en la generación de números aleatorios, manejo de eventos de clic.",
+    imagen: "imagenes/juegoPPT.png",
+    link: "https://github.com/YouneKass/piedraPapelTijera"
+  }
+};
+
+const botones = document.querySelectorAll(".btn-modal");
+const modal = document.getElementById("modal");
+
+const modalTitulo = document.getElementById("modalTitulo");
+const modalTexto  = document.getElementById("modalTexto");
+const modalImagen = document.getElementById("modalImagen");
+const botonLink   = document.getElementById("modalBotonLink");
+let linkActual = null; 
+
+const cerrar = document.querySelector(".cerrar");
+
+botones.forEach(boton => {
+  boton.addEventListener("click", () => {
+
+    const id = boton.dataset.id;   
+    const data = infoTarjetas[id];
+
+    if (!data) return;
+
+    modalTitulo.textContent = data.titulo;
+    modalTexto.textContent  = data.descripcion;
+
+    if (data.imagen) {
+      modalImagen.src = data.imagen;
+      modalImagen.style.display = "block";
+    } else {
+      modalImagen.style.display = "none";
+    }
+
+    linkActual = data.link;
+
+    modal.style.display = "flex";
+  });
+});
+
+botonLink.addEventListener("click", () => {
+  if (linkActual) {
+    window.open(linkActual, "_blank");
+  }
+});
+
+cerrar.addEventListener("click", () => modal.style.display = "none");
+
+modal.addEventListener("click", e => {
+  if (e.target === modal) modal.style.display = "none";
+});
 
 function crearSkillElemento(skill) {
   const div = document.createElement("div");
