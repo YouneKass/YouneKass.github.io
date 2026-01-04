@@ -228,11 +228,15 @@ body{
   max-width:450px;
   box-shadow:0 10px 20px rgba(0,0,0,.35);
 }
-.modal-contenido p, img, input{
+.modal-contenido p, input{
   margin-top: 2rem;
   text-align: justify;
 }
 
+.modal-contenido img{
+  margin-top: 2rem;
+  text-align: justify;
+}
 .cerrar{
   float:right;
   font-size:1.8rem;
@@ -487,9 +491,7 @@ footer h1{
   padding: 0.6rem 1rem;
   border: 2px solid #fff;
   border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
+  margin-right: 1rem;
 }
 
 .btn-cv:hover {
