@@ -485,6 +485,10 @@ footer h1{
   .divPresentacion{
     flex-direction: column;
   }
+
+  .btn-cv{
+    margin-top: 1rem;
+  }
 }
 
 .btn-cv {
